@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> <!-- Para que se vean bien las tildes y la ñ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para que se vea bien en el móvil -->
+    <meta name="description"
+        content="Recetas fáciles para aprovechar los alimentos que están a punto de caducar y no tirar comida.">
+    <!-- Resumen que sale en Google -->
+    <meta name="keywords"
+        content="ZeroWaste, recetas, recetas de aprovechamiento, alimentos a punto de caducar, recetas fáciles">
+    <!-- Palabras clave de la web -->
+    <meta name="author" content="Mary"> <!-- Autora de la web -->
+    <title>Recetas - ZeroWaste</title> <!-- Título de la pestaña -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"> <!-- Icono de la pestaña -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Hoja de estilos -->
+</head>
+
+<body>
+    <header>
+        <a href="index.html"> <!-- Ruta para que la imagen vuelva a index.html -->
+            <img src="img/ZeroWaste_logo_transparente.png" alt="Logo de ZeroWaste" width="150">
+            <!-- Logo de la web. Al hacer click, vuelve al index.html -->
+        </a>
+
+        <nav> <!-- Contiene los enlaces de navegación -->
+            <ul> <!-- Lista con las páginas de la web -->
+                <li><a href="despensa.html">Despensa</a></li>
+                <li><a href="compra.html">Compra</a></li>
+                <li><a href="producto.html">Productos</a></li>
+                <li><a href="receta.html">Recetas</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <hr> <!-- Línea que separa la cabecera del contenido -->
+    </header>
+
+    <main> <!-- Contenido principal de la página -->
+        <h1>Recetas de aprovechamiento</h1> <!-- Un solo h1 por página, igual que el title -->
+
+        <section>
+            <h2>Caducan pronto</h2>
+            <p>Según tu <a href="despensa.html">despensa</a>, estos productos caducan en los próximos días.
+                <strong>Úsalos primero</strong> con alguna de estas recetas.
+            </p>
+
+            <!-- De momento esta lista y las recetas están escritas a mano.
+                 Más adelante, con JavaScript, la web mirará qué productos caducan pronto
+                 y buscará en un recetario las recetas que los usan -->
+            <ul>
+                <li>Yogures naturales (28/10/2026)</li>
+                <li>Leche (30/10/2026)</li>
+                <li>Plátanos (31/10/2026)</li>
+            </ul>
+            <hr>
+        </section>
+
+        <section>
+            <h2>Batido de plátano y yogur</h2>
+            <p>Aprovecha: <em>plátanos, yogur y leche</em>. Listo en 5 minutos.</p>
+            <!-- Uso em para destacar qué productos se aprovechan -->
+
+            <h3>Ingredientes</h3>
+            <ul> <!-- ul porque los ingredientes no tienen orden -->
+                <li>2 plátanos maduros</li>
+                <li>1 yogur natural</li>
+                <li>1 vaso de leche</li>
+                <li>1 cucharadita de miel (opcional)</li>
+            </ul>
+
+            <h3>Pasos</h3>
+            <ol> <!-- ol porque los pasos sí tienen orden -->
+                <li>Pela los plátanos y córtalos en trozos.</li>
+                <li>Ponlos en la batidora con el yogur, la leche y la miel.</li>
+                <li>Bate hasta que quede todo cremoso.</li>
+                <li>Sírvelo frío.</li>
+            </ol>
+            <hr>
+        </section>
+
+        <section>
+            <h2>Bizcocho de yogur</h2>
+            <p>Aprovecha: <em>yogur</em>. Se usa el vaso del yogur para medir el resto de ingredientes.</p>
+
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>1 yogur natural</li>
+                <li>3 huevos</li>
+                <li>3 vasos de yogur de harina</li>
+                <li>2 vasos de yogur de azúcar</li>
+                <li>1 vaso de yogur de aceite</li>
+                <li>1 sobre de levadura</li>
+            </ul>
+
+            <h3>Pasos</h3>
+            <ol>
+                <li>Enciende el horno a 180 grados.</li>
+                <li>Mezcla el yogur, los huevos, el azúcar y el aceite.</li>
+                <li>Añade la harina y la levadura y mezcla hasta que no queden grumos.</li>
+                <li>Echa la masa en un molde engrasado.</li>
+                <li>Hornea unos 35 minutos, hasta que al pincharlo con un palillo salga limpio.</li>
+            </ol>
+            <hr>
+        </section>
+
+        <section>
+            <h2>Tortitas de plátano</h2>
+            <p>Aprovecha: <em>plátanos muy maduros</em>. Cuanto más maduros, más dulces quedan.</p>
+
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>2 plátanos muy maduros</li>
+                <li>2 huevos</li>
+                <li>4 cucharadas de harina</li>
+                <li>Un poco de aceite para la sartén</li>
+            </ul>
+
+            <h3>Pasos</h3>
+            <ol>
+                <li>Aplasta los plátanos con un tenedor hasta hacer un puré.</li>
+                <li>Añade los huevos y la harina y mézclalo todo.</li>
+                <li>Calienta la sartén con un poco de aceite.</li>
+                <li>Echa una cucharada de masa y cocina cada tortita 1 o 2 minutos por cada lado.</li>
+            </ol>
+            <hr>
+        </section>
+
+        <section>
+            <h2>Comentarios</h2>
+            <p>¿Has probado alguna receta? Cuéntanos qué tal te ha salido o comparte tu truco.</p>
+
+            <!-- De momento el formulario no guarda nada: al pulsar Publicar, la página se recarga.
+                 Para guardar los comentarios de verdad hace falta un servidor y una base de datos -->
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario"></textarea>
+                <!-- textarea porque el comentario puede ser largo -->
+
+                <button type="submit">Publicar</button>
+            </form>
+
+            <article>
+                <!-- Comentario de ejemplo, para ver cómo se vería uno publicado. Uso article porque cada comentario es contenido independiente. -->
+                <h3>Lucía</h3>
+                <p>El bizcocho de yogur me salió genial, le añadí ralladura de limón.</p>
+            </article>
+
+            <article>
+                <h3>Fran</h3>
+                <p>El batido con plátanos muy maduros queda mucho más dulce, ¡no hace falta miel!</p>
+            </article>
+
+            <hr>
+        </section>
+
+    </main>
+
+    <footer> <!-- Pie de página -->
+        <a href="https://www.instagram.com/" target="_blank">
+            <!-- Enlace exterior a Instagram, se abre en pestaña nueva -->
+            <img src="img/instagram_logo.png" alt="Instagram" width="50"> <!-- Icono de Instagram que hace de enlace -->
+        </a>
+        <p>Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

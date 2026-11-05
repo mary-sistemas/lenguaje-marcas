@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> <!-- Para que se vean bien las tildes y la ñ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para que se vea bien en el móvil -->
+    <meta name="description"
+        content="Contacta con ZeroWaste: encuentra dónde estamos o envíanos un mensaje con tus dudas o sugerencias.">
+    <!-- Resumen que sale en Google -->
+    <meta name="keywords" content="contacto, formulario, ubicación, dónde estamos, escríbenos">
+    <!-- Palabras clave de la web -->
+    <meta name="author" content="Mary"> <!-- Autora de la web -->
+    <title>Contáctanos - ZeroWaste</title>
+    <!-- Título de la pestaña. Pongo el nombre de la página para distinguirla del index -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"> <!-- Icono de la pestaña -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Hoja de estilos -->
+</head>
+
+<body>
+    <header>
+        <a href="index.html"> <!-- Ruta para que la imagen vuelva a index.html -->
+            <img src="img/ZeroWaste_logo_transparente.png" alt="Logo de ZeroWaste" width="150">
+            <!-- Logo de la web. Al hacer click, vuelve al index.html -->
+        </a>
+
+        <nav> <!-- Contiene los enlaces de navegación -->
+            <ul> <!-- Lista con las páginas de la web -->
+                <li><a href="despensa.html">Despensa</a></li>
+                <li><a href="compra.html">Compra</a></li>
+                <li><a href="producto.html">Productos</a></li>
+                <li><a href="receta.html">Recetas</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <hr> <!-- Línea que separa la cabecera del contenido -->
+    </header>
+
+    <main> <!-- Contenido principal de la página -->
+        <h1>Contáctanos</h1> <!-- Un solo h1 por página, igual que el title -->
+
+        <section> <!-- Sección del mapa -->
+            <h2>¿Dónde estamos?</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.2966660784696!2d-3.7090158232607497!3d40.40227825651772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227cd87d00125%3A0xb9494bd1625bc449!2sIES%20Juan%20de%20la%20Cierva!5e0!3m2!1ses!2ses!4v1792570071022!5m2!1ses!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <!-- Mapa de Google Maps metido en la página -->
+            <hr>
+        </section>
+
+        <section> <!-- Sección del formulario -->
+            <h2>Envíanos un mensaje</h2>
+
+            <form action="enviado.html" method="get">
+                <!-- Formulario para que el usuario introduzca sus datos y mande un mensaje. Al pulsar Enviar, va a enviado.html. Uso get porque no hay servidor que reciba los datos -->
+
+                <label for="nombre">Nombre:</label> <!-- Aquí va el nombre. -->
+                <input type="text" id="nombre" name="nombre">
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="text" id="correo" name="correo">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+                <!-- Uso textarea porque es una caja grande y se pueden escribir varias líneas -->
+                <button type="submit">Enviar</button>
+            </form>
+            <hr>
+        </section>
+    </main>
+
+    <footer> <!-- Pie de página -->
+        <a href="https://www.instagram.com/" target="_blank">
+            <!-- Enlace exterior a Instagram, se abre en pestaña nueva -->
+            <img src="img/instagram_logo.png" alt="Instagram" width="50"> <!-- Icono de Instagram que hace de enlace -->
+        </a>
+        <p>Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

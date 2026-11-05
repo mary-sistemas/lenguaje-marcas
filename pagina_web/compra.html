@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> <!-- Para que se vean bien las tildes y la ñ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para que se vea bien en el móvil -->
+    <meta name="description"
+        content="Prepara tu lista de la compra según lo que ya tienes en casa y evita comprar alimentos repetidos que acabarán en la basura.">
+    <!-- Resumen que sale en Google -->
+    <meta name="keywords" content="ZeroWaste, lista de la compra, supermercado, compra responsable, evitar desperdicio">
+    <!-- Palabras clave de la web -->
+    <meta name="author" content="Mary"> <!-- Autora de la web -->
+    <title>Compra - ZeroWaste</title> <!-- Título de la pestaña -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"> <!-- Icono de la pestaña -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Hoja de estilos -->
+</head>
+
+<body>
+    <header>
+        <a href="index.html"> <!-- Ruta para que la imagen vuelva a index.html -->
+            <img src="img/ZeroWaste_logo_transparente.png" alt="Logo de ZeroWaste" width="150">
+            <!-- Logo de la web. Al hacer click, vuelve al index.html -->
+        </a>
+
+        <nav> <!-- Contiene los enlaces de navegación -->
+            <ul> <!-- Lista con las páginas de la web -->
+                <li><a href="despensa.html">Despensa</a></li>
+                <li><a href="compra.html">Compra</a></li>
+                <li><a href="producto.html">Productos</a></li>
+                <li><a href="receta.html">Recetas</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <hr> <!-- Línea que separa la cabecera del contenido -->
+    </header>
+
+    <main> <!-- Contenido principal de la página -->
+        <h1>Compra</h1> <!-- Un solo h1 por página, igual que el title -->
+
+        <section> <!-- Sección con la lista de la compra -->
+            <h2>Mi lista de la compra</h2>
+            <p>Antes de ir al supermercado, mira lo que ya tienes en la <a href="despensa.html">despensa</a>
+                y apunta solo lo que falta. Así no compras cosas repetidas que acaban en la basura.</p>
+            <!-- Enlace interior a la despensa -->
+
+            <!-- De momento el formulario no guarda nada: al pulsar Añadir, la página se recarga
+                 y la lista sigue igual. Más adelante, con JavaScript, el producto se añadirá a la lista. -->
+            <form> <!-- Formulario para que el usuario apunte lo que quiere comprar -->
+
+                <label for="producto">Producto:</label>
+                <input type="text" id="producto" name="producto">
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="text" id="cantidad" name="cantidad">
+
+                <button type="submit">Añadir</button> <!-- El botón añadir, de momento es estático, no guarda nada -->
+            </form>
+
+            <ul> <!-- Lista desordenada porque en la compra no importa el orden. De momento los productos están escritos a mano. Con JavaScript, lo que se escriba en el formulario aparecerá aquí -->
+                <li><strong class="pronto">Leche</strong> (se acaba pronto)</li> <!-- Clase pronto: icono de aviso -->
+                <li><strong class="agotado">Huevos</strong> (no queda ninguno)</li> <!-- Clase agotado: icono rojo -->
+                <li>Pan</li>
+                <li>Tomates</li>
+                <li>Aceite de oliva</li>
+                <li>Mandarinas</li>
+            </ul>
+            <hr>
+        </section>
+
+        <aside> <!-- Información complementaria: calendario de temporadas -->
+            <h2>Calendario de temporada</h2>
+            <p>Comprar alimentos de temporada ayuda a desperdiciar menos: están más frescos,
+                duran más en casa y suelen ser más baratos.</p>
+
+            <p><a href="https://www.mapa.gob.es/dam/mapa/contenido/alimentacion/temas/estrategia-desperdicios/nueva-web-2022/5.-sensibilizacion/5.4-infografias/documentos-infografias/11calendario_verduras_completo.pdf"
+                    target="_blank">
+                    Ver el calendario de verduras de todo el año (PDF del Ministerio)</a></p>
+            <!-- Enlace exterior, se abre en pestaña nueva -->
+            <hr>
+        </aside>
+    </main>
+
+    <footer> <!-- Pie de página -->
+        <a href="https://www.instagram.com/" target="_blank">
+            <!-- Enlace exterior a Instagram, se abre en pestaña nueva -->
+            <img src="img/instagram_logo.png" alt="Instagram" width="50"> <!-- Icono de Instagram que hace de enlace -->
+        </a>
+        <p>Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> <!-- Para que se vean bien las tildes y la ñ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para que se vea bien en el móvil -->
+    <meta name="description"
+        content="Consulta todos los alimentos que tienes en casa, dónde están guardados y cuándo caducan, para consumir primero los que van a caducar.">
+    <!-- Resumen que sale en Google -->
+    <meta name="keywords" content="despensa, nevera, congelador, frutero, inventario de alimentos, fecha de caducidad">
+    <!-- Palabras clave de la web -->
+    <meta name="author" content="Mary"> <!-- Autora de la web -->
+    <title>Despensa - ZeroWaste</title> <!-- Título de la pestaña -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"> <!-- Icono de la pestaña -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Hoja de estilos -->
+</head>
+
+<body>
+    <header>
+        <a href="index.html"> <!-- Ruta para que la imagen vuelva a index.html -->
+            <img src="img/ZeroWaste_logo_transparente.png" alt="Logo de ZeroWaste" width="150">
+            <!-- Logo de la web. Al hacer click, vuelve al index.html -->
+        </a>
+
+        <nav> <!-- Contiene los enlaces de navegación -->
+            <ul> <!-- Lista con las páginas de la web -->
+                <li><a href="despensa.html">Despensa</a></li>
+                <li><a href="compra.html">Compra</a></li>
+                <li><a href="producto.html">Productos</a></li>
+                <li><a href="receta.html">Recetas</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <hr> <!-- Línea que separa la cabecera del contenido -->
+    </header>
+
+    <main> <!-- Contenido principal de la página -->
+        <h1>Despensa</h1> <!-- Un solo h1 por página, igual que el title -->
+
+        <section> <!-- Sección con el formulario para añadir alimentos -->
+            <h2>Añadir alimento</h2>
+            <p>Escribe el alimento que quieres añadir, dónde lo guardas y cuándo caduca.</p>
+
+            <!-- De momento el formulario no guarda nada: al pulsar Añadir, la página se recarga
+                 y la tabla sigue igual. Más adelante, con JavaScript, el alimento se añadirá a la tabla. -->
+            <form> <!-- Formulario para que el usuario introduzca un alimento nuevo -->
+
+                <label for="alimento">Alimento:</label>
+                <input type="text" id="alimento" name="alimento">
+
+                <label for="ubicacion">Dónde está:</label> <!-- Aquí el usuario elige dónde guarda el alimento -->
+                <select id="ubicacion" name="ubicacion">
+                    <!-- Lista desplegable para que todos escriban la ubicación igual -->
+                    <option value="nevera">Nevera</option>
+                    <option value="congelador">Congelador</option>
+                    <option value="despensa">Despensa</option>
+                    <option value="frutero">Frutero</option>
+                </select>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="text" id="cantidad" name="cantidad">
+
+                <label for="caducidad">Fecha de caducidad:</label>
+                <input type="text" id="caducidad" name="caducidad">
+
+                <button type="submit">Añadir</button> <!-- El botón añadir, de momento es estático, no guarda nada -->
+            </form>
+            <hr>
+        </section>
+
+        <section> <!-- Sección con la tabla de los alimentos que hay en casa -->
+            <h2>¿Qué tengo en casa?</h2>
+            <p>Aquí están todos los alimentos de casa, dónde están guardados y cuándo caducan.
+                Están ordenados por fecha: <em>los de arriba son los primeros que hay que consumir</em>.</p>
+            <!-- Uso em para dar énfasis a la frase importante -->
+
+            <!-- De momento la tabla es estática: los alimentos están escritos a mano.
+                 Más adelante, con JavaScript, se podrán añadir y quitar alimentos
+                 y la web avisará de los que van a caducar. -->
+            <table> <!-- Tabla con los alimentos de casa -->
+                <tr> <!-- Primera fila: los títulos de cada columna -->
+                    <th>Alimento</th> <!-- th = celda de título, sale en negrita y centrada -->
+                    <th>Dónde está</th>
+                    <th>Cantidad</th>
+                    <th>Fecha de caducidad</th>
+                </tr>
+                <tr> <!-- Cada tr es una fila, un alimento -->
+                    <td>Yogures naturales</td> <!-- td = celda normal con el dato -->
+                    <td>Nevera</td>
+                    <td>4 unidades</td>
+                    <td>28/10/2026</td>
+                </tr>
+                <tr>
+                    <td>Leche</td>
+                    <td>Nevera</td>
+                    <td>1 litro</td>
+                    <td>30/10/2026</td>
+                </tr>
+                <tr>
+                    <td>Plátanos</td>
+                    <td>Frutero</td>
+                    <td>5 unidades</td>
+                    <td>31/10/2026</td>
+                </tr>
+                <tr>
+                    <td>Pechuga de pollo</td>
+                    <td>Congelador</td>
+                    <td>500 g</td>
+                    <td>15/12/2026</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Despensa</td>
+                    <td>1 kg</td>
+                    <td>20/05/2027</td>
+                </tr>
+                <tr>
+                    <td>Lentejas</td>
+                    <td>Despensa</td>
+                    <td>500 g</td>
+                    <td>10/09/2027</td>
+                </tr>
+            </table>
+            <hr>
+        </section>
+
+        <section> <!-- Sección con el vídeo de cómo organizar la nevera -->
+            <h2>¿Cómo organizar la nevera?</h2> <!-- Título del vídeo -->
+            <p>En este vídeo se ve cómo colocar la comida en la nevera para tener a mano
+                los alimentos que caducan antes y no olvidarnos de ellos.</p>
+
+            <video controls width="400">
+                <!-- Reproductor de vídeo. controls = que salgan los botones de play, pausa y volumen -->
+                <source src="video/guardarComida.mp4" type="video/mp4">
+                Tu navegador no puede mostrar este vídeo.
+            </video>
+            <hr>
+        </section>
+    </main>
+
+    <footer> <!-- Pie de página -->
+        <a href="https://www.instagram.com/" target="_blank">
+            <!-- Enlace exterior a Instagram, se abre en pestaña nueva -->
+            <img src="img/instagram_logo.png" alt="Instagram" width="50"> <!-- Icono de Instagram que hace de enlace -->
+        </a>
+        <p>Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> <!-- Para que se vean bien las tildes y la ñ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para que se vea bien en el móvil -->
+    <meta name="description"
+        content="ZeroWaste es una web para organizar los alimentos de casa, ver dónde están y cuándo caducan, y así tirar menos comida.">
+    <!-- Resumen que sale en Google -->
+    <meta name="keywords" content="ZeroWaste, desperdicio alimentario, organizar alimentos, caducidad, ahorro, hogar">
+    <!-- Palabras clave de la web -->
+    <meta name="author" content="Mary"> <!-- Autora de la web -->
+    <title>Inicio - ZeroWaste</title> <!-- Título de la pestaña -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"> <!-- Icono de la pestaña -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Hoja de estilos -->
+</head>
+
+<body>
+    <header>
+        <a href="index.html"> <!-- Ruta para que la imagen vuelva a index.html -->
+            <img src="img/ZeroWaste_logo_transparente.png" alt="Logo de ZeroWaste" width="150">
+            <!-- Logo de la web. Al hacer click, vuelve al index.html -->
+        </a>
+
+        <nav> <!-- Contiene los enlaces de navegación -->
+            <ul> <!-- Lista con las páginas de la web -->
+                <li><a href="despensa.html">Despensa</a></li>
+                <li><a href="compra.html">Compra</a></li>
+                <li><a href="producto.html">Productos</a></li>
+                <li><a href="receta.html">Recetas</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <hr> <!-- Línea que separa la cabecera del contenido -->
+    </header>
+
+    <main> <!-- Contenido principal de la página -->
+        <article>
+            <!-- Presentación de ZeroWaste. Es contenido independiente: se entiende aunque se lea separado del resto -->
+            <section>
+                <h1>¿Qué es ZeroWaste?</h1>
+                <p class="intro">ZeroWaste es una web para organizar los alimentos que tenemos en casa:
+                    en la nevera, el congelador, la despensa o el frutero.</p> <!-- Clase intro: letra capital -->
+                <hr>
+            </section>
+
+            <section>
+                <h2>Objetivo</h2>
+                <p>Ver de un vistazo qué alimentos hay, dónde están y cuándo caducan,
+                    para consumir primero los que están a punto de caducar y tirar menos comida.</p>
+                <hr>
+            </section>
+
+        </article>
+
+        <aside> <!-- Dato complementario sobre el desperdicio de comida -->
+            <h2>¿Sabes cuánta comida tiramos al año?</h2>
+            <p>Según el Informe sobre el desperdicio alimentario en los hogares 2025 del
+                <a href="https://www.mapa.gob.es/es/alimentacion/temas/desperdicio/desperdicio-alimentario-hogares/"
+                    target="_blank">
+                    Ministerio de Agricultura, Pesca y Alimentación</a>:
+                <!-- Enlace exterior, se abre en pestaña nueva -->
+                los hogares españoles desperdiciaron en 2025 un total de <strong>1.101,8 millones de kilos o
+                    litros</strong> de alimentos y bebidas. <!-- Destaco la cifra con strong -->
+            </p>
+
+            <img src="img/comidaTirada.jpg" alt="Comida desperdiciada" width="400">
+            <hr>
+        </aside>
+
+        <section>
+            <h2>¿Cómo funciona esta web?</h2>
+            <ol> <!-- Lista numerada con los pasos -->
+                <li>Añade los alimentos que tienes en casa y dónde los guardas.</li>
+                <li>Consulta cuáles caducan antes para consumirlos primero.</li>
+                <li>Reduce el desperdicio y ahorra dinero.</li>
+            </ol>
+            <hr>
+        </section>
+
+        <section>
+            <h2>¿Te animas a probarlo?</h2>
+            <p><a href="despensa.html">Pulsa aquí para empezar a hacer tu despensa.</a></p>
+            <!-- Enlace interior, se abre en la misma pestaña -->
+            <hr>
+        </section>
+    </main>
+
+    <footer> <!-- Pie de página -->
+        <a href="https://www.instagram.com/" target="_blank">
+            <!-- Enlace exterior a Instagram, se abre en pestaña nueva -->
+            <img src="img/instagram_logo.png" alt="Instagram" width="50"> <!-- Icono de Instagram que hace de enlace -->
+        </a>
+        <p>Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

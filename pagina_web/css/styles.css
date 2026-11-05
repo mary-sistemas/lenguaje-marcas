@@ -1,0 +1,141 @@
+/* Estilos de ZeroWaste */
+
+/* ===== Página entera ===== */
+
+/* Fuente de toda la página */
+body {
+    font-family: Papyrus, fantasy;
+    margin: 0;
+}
+
+/* ===== Cabecera y menú ===== */
+
+/* Cabecera: fondo claro para que se vea el logo, centrada, con espacio dentro y línea verde abajo */
+header {
+    background-color: #F3F8EF;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 4px solid #35883E;
+}
+
+/* Quito los puntitos del menú */
+ul {
+    list-style-type: none;
+}
+
+/* ===== Títulos y enlaces ===== */
+
+/* Títulos en el verde del logo */
+h1 {
+    color: #35883E;
+}
+
+h2 {
+    color: #35883E;
+}
+
+/* Enlaces en verde oscuro (no heredan el color del body) */
+a {
+    color: #1F5A2A;
+}
+
+/* Al pasar el ratón, el enlace se pone en el verde del logo */
+a:hover {
+    color: #35883E;
+}
+
+/* ===== Formularios y botones ===== */
+
+/* El formulario no hereda la fuente, se la pongo a mano */
+input, select, button {
+    font-family: Papyrus, fantasy;
+}
+
+/* Campo o desplegable donde estoy escribiendo, con borde verde */
+input:focus, select:focus {
+    border: 2px solid #35883E;
+}
+
+/* Botones verdes con letra blanca y la manita al pasar el ratón */
+button {
+    background-color: #2E7D32;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Más oscuro al pasar el ratón por encima */
+button:hover {
+    background-color: #1F5A2A;
+}
+
+/* Todavía más oscuro mientras se pulsa */
+button:active {
+    background-color: #154020;
+}
+
+/* ===== Tabla (despensa) ===== */
+
+/* Junta los bordes de las celdas para que no salgan dobles */
+table {
+    border-collapse: collapse;
+}
+
+/* Borde verde y espacio dentro de todas las celdas */
+th, td {
+    border: 1px solid #35883E;
+    padding: 8px 12px;
+}
+
+/* Fondo claro en la fila de títulos de la tabla */
+th {
+    background-color: #F3F8EF;
+}
+
+/* ===== Inicio (index.html) ===== */
+
+/* Primera letra del párrafo de presentación, el doble de grande y en verde */
+.intro::first-letter {
+    font-size: 2em;
+    color: #35883E;
+}
+
+/* Un check al final de cada paso de la lista */
+.pasos li::after {
+    content: " ✅";
+}
+
+/* ===== Lista de la compra (compra.html) ===== */
+
+/* Icono de aviso al final del nombre */
+.pronto::after {
+    content: " ⚠️";
+}
+
+/* Icono de agotado al final del nombre */
+.agotado::after {
+    content: " ❌";
+}
+
+/* ===== Información complementaria ===== */
+
+/* Aside como tarjeta: borde verde redondeado, espacio dentro y separado del resto */
+aside {
+    border: 2px solid #35883E;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 10px;
+}
+
+/* ===== Pie de página ===== */
+
+/* Pie: igual que la cabecera para cerrar la página, con línea verde arriba y separado del contenido */
+footer {
+    background-color: #F3F8EF;
+    text-align: center;
+    padding: 10px;
+    border-top: 4px solid #35883E;
+    margin-top: 20px;
+}
