@@ -6,7 +6,7 @@ Trabajos del módulo de Lenguaje de Marcas y Sistemas de Gestión de la Informac
 
 Página web para organizar los alimentos de casa (nevera, despensa y frutero), ver cuándo caducan y tirar menos comida.
 
-**Ver la web:** [ZeroWaste](https://unknown-user755.github.io/lenguaje-marcas/pagina_web/)
+**Ver la web:** [ZeroWaste](https://mary-sistemas.github.io/lenguaje-marcas/pagina_web/)
 
 - **HTML:** estructura semántica (header, nav, main, section, aside, footer), tablas, formularios, imágenes y vídeo.
 - **CSS:** colores a partir del logo, fuentes, bordes, Box Model, pseudoclases (hover, active, focus) y pseudoelementos (first-letter, after).
